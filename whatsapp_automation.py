@@ -155,32 +155,6 @@ class WhatsAppAutomationApp:
 
         # LabelFrame - card style
         style.configure("Card.TLabelframe", background=self.BG_CARD, borderwidth=1, relief="solid", bordercolor=self.BORDER)
-        style.configure("Card.TLabelframe.Label", background=self.BG_CARD, foreground=self.FG_PRIMARY, font=(self.FONT_FAMILY, 11, "bold"), padding=(0, 0, 0, 8)) 
-            background=self.WHATSAPP_GREEN, foreground=self.WHITE, 
-            font=(self.FONT_FAMILY, self.FONT_SIZE, "bold"), padding=(20, 12),
-            borderwidth=0, focusthickness=0, focuscolor=self.WHATSAPP_GREEN)
-        style.map("Primary.TButton", 
-            background=[("active", self.WHATSAPP_GREEN_HOVER), ("disabled", self.FG_MUTED)],
-            foreground=[("disabled", "#cccccc")])
-
-        style.configure("Secondary.TButton", 
-            background=self.BG_CARD, foreground=self.FG_PRIMARY, 
-            font=(self.FONT_FAMILY, self.FONT_SIZE, "bold"), padding=(20, 12),
-            borderwidth=1, bordercolor=self.BORDER)
-        style.map("Secondary.TButton", 
-            background=[("active", self.BG_HOVER), ("disabled", self.BG_LIGHT)],
-            foreground=[("disabled", self.FG_MUTED)],
-            bordercolor=[("active", self.WHATSAPP_GREEN)])
-
-        style.configure("Danger.TButton", 
-            background=self.RED, foreground=self.WHITE, 
-            font=(self.FONT_FAMILY, self.FONT_SIZE, "bold"), padding=(20, 12),
-            borderwidth=0)
-        style.map("Danger.TButton", 
-            background=[("active", self.RED_HOVER), ("disabled", "#f5b7b1")])
-
-        # LabelFrame styling
-        style.configure("Card.TLabelframe", background=self.BG_CARD, borderwidth=1, relief="solid", bordercolor=self.BORDER)
         style.configure("Card.TLabelframe.Label", background=self.BG_CARD, foreground=self.FG_PRIMARY, font=(self.FONT_FAMILY, 11, "bold"), padding=(0, 0, 0, 8))
 
     def _build_ui(self) -> None:
